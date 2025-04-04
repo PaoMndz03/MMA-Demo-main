@@ -1,0 +1,81 @@
+#Episode 1
+
+#Escena1
+; Escena 1 - Sueño
+@back Noche
+Protagonista: Otra vez el mismo sueño, sin importar qué haga, siempre regreso aquí.
+
+#Escena2
+; Escena 2 - Calle empedrada
+@back Gato
+Protagonista: ¿Qué habrá pasado? ... 
+Protagonista: Hola, gatito. ¿Te has perdido? 
+Protagonista: Parece que yo también.
+Protagonista: ¿A dónde vas, pequeño?
+
+#Escena3
+; Escena 3 - Bosque
+@back Bosque
+Gato: Qué extraño. Se supone que los humanos comunes no deberían percibir este lugar, mucho menos llegar hasta aquí.
+@char Gato.Normal
+Protagonista.Confundida: ¿Y tú quién eres? ¿Conoces al gatito que estaba siguiendo?
+Gato: Ven conmigo.
+
+@choice Seguirla sin decir ninguna palabra. goto:.Escena4.1.
+@choice ¿Me vas a dar dulces? goto:.Escena4.2
+@choice Correr en la dirección contraria. goto:.Escena4.3 
+
+#Escena4.1
+; Escena 4.1 - Bosque
+@back Bosque
+@char Protagonista.Normal
+Gato.Feliz: Bien, dame la mano.
+
+goto:.Escena5
+
+#Escena4.2
+; Escena 4.2 - Bosque
+@back Bosque
+@char Protagonista.Normal
+Gato.Enojado: ¿Qué clase de persona crees que soy? No atraigo a niños con dulces para luego comérmelos.
+Protagonista.Feliz: Si tú lo dices.
+Gato.Enojado: Toma la mano de la protagonista con fuerza y la arrastra hacia algún lugar desconocido.
+
+#Escena4.3
+; Final 1 - Mala decisión
+@back Bosque
+@char Protagonista.Confundida
+@char Gato.Enojado
+;@char  Protagonista remove
+Lección número 1: No hables con extraños.
+
+#Escena5
+; Escena 5 - Entrada de la escuela
+@back Entrada
+;@char Gato remove
+;@char  Protagonista remove
+Gato: Bienvenida. Esta es la Academia Mística o MMA. Un lugar para aquellos con dones especiales.
+Protagonista: ¿Dones especiales? No entiendo... Yo solo soy una chica normal.
+Gato: Evitando la mirada. Ya veremos.
+
+@choice Seguir a Gato en silencio. goto:.Escena6.1
+@choice Preguntar directamente qué está pasando. goto:.Escena6.2
+
+#Escena6.1
+; Escena 6.1 - Interior de la escuela
+#scene6_1
+@back Escuela
+;@char Gato remove
+Protagonista.Feliz: (Todo esto es increíble... pero tan extraño).
+Gato.Feliz: Aquí es donde comenzarás a entender tu verdadero propósito.
+
+#Escena6.2
+; Escena 6.2 - Interior de la escuela
+@back Escuela
+;@char Gato remove
+Protagonista.Confundida: Espera, necesito respuestas. ¿Por qué estoy aquí? ¿Qué significa todo esto?
+Gato.Feliz2: Sus ojos brillan levemente. Pronto lo sabrás. Pero primero, necesitamos presentarte.
+
+#Escena7
+; Escena 7 - Interior de la escuela
+Continuará...
