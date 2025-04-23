@@ -253,3 +253,54 @@ MonoBehaviour:
     - name: Confundido
       pathPrefix: Characters/Gato
       guid: 9508ad3a36a4eb84284abec9a7b80ee8
+  - Id: Characters/153adf64-f8d3-4fad-9f27-9341e1855d67
+    Resources:
+    - name: Normal
+      pathPrefix: Characters/Vio
+      guid: 7ad1973a7143550468bd8a1934109a11
+    - name: Feliz
+      pathPrefix: Characters/Vio
+      guid: 7ad1973a7143550468bd8a1934109a11
+    - name: Triste
+      pathPrefix: Characters/Vio
+      guid: 7ad1973a7143550468bd8a1934109a11
+    - name: Enojada
+      pathPrefix: Characters/Vio
+      guid: 7ad1973a7143550468bd8a1934109a11
+    - name: Confundida
+      pathPrefix: Characters/Vio
+      guid: 7ad1973a7143550468bd8a1934109a11
+  - Id: Characters/32ece09d-75e6-4a79-b6e1-36aba85bed51
+    Resources:
+    - name: Normal
+      pathPrefix: Characters/Val
+      guid: 860b5667041a9d7428cdb004a40d6ee4
+    - name: Feliz
+      pathPrefix: Characters/Val
+      guid: 860b5667041a9d7428cdb004a40d6ee4
+    - name: Triste
+      pathPrefix: Characters/Val
+      guid: 860b5667041a9d7428cdb004a40d6ee4
+    - name: Enojada
+      pathPrefix: Characters/Val
+      guid: 860b5667041a9d7428cdb004a40d6ee4
+    - name: Confundida
+      pathPrefix: Characters/Val
+      guid: 860b5667041a9d7428cdb004a40d6ee4
+  - Id: Characters/a1216ba0-e8ea-45c5-be67-62d6a0a6b867
+    Resources:
+    - name: Normal
+      pathPrefix: Characters/Pay
+      guid: b418c80cae6396d46a51a74af73c61ea
+    - name: Feliz
+      pathPrefix: Characters/Pay
+      guid: b418c80cae6396d46a51a74af73c61ea
+    - name: Triste
+      pathPrefix: Characters/Pay
+      guid: b418c80cae6396d46a51a74af73c61ea
+    - name: Enojada
+      pathPrefix: Characters/Pay
+      guid: b418c80cae6396d46a51a74af73c61ea
+    - name: Confundida
+      pathPrefix: Characters/Pay
+      guid: b418c80cae6396d46a51a74af73c61ea

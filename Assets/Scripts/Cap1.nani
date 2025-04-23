@@ -1,11 +1,11 @@
-#Episode 1
+# Episodio1
 
-#Escena1
+# Escena1
 ; Escena 1 - Sueño
 @back Noche
 Protagonista: Otra vez el mismo sueño, sin importar qué haga, siempre regreso aquí.
 
-#Escena2
+# Escena2
 ; Escena 2 - Calle empedrada
 @back Gato
 Protagonista: ¿Qué habrá pasado? ... 
@@ -13,7 +13,7 @@ Protagonista: Hola, gatito. ¿Te has perdido?
 Protagonista: Parece que yo también.
 Protagonista: ¿A dónde vas, pequeño?
 
-#Escena3
+# Escena3
 ; Escena 3 - Bosque
 @back Bosque
 Gato: Qué extraño. Se supone que los humanos comunes no deberían percibir este lugar, mucho menos llegar hasta aquí.
@@ -21,61 +21,177 @@ Gato: Qué extraño. Se supone que los humanos comunes no deberían percibir est
 Protagonista.Confundida: ¿Y tú quién eres? ¿Conoces al gatito que estaba siguiendo?
 Gato: Ven conmigo.
 
-@choice Seguirla sin decir ninguna palabra. goto:.Escena4.1.
-@choice ¿Me vas a dar dulces? goto:.Escena4.2
-@choice Correr en la dirección contraria. goto:.Escena4.3 
+@choice "Seguirla sin decir ninguna palabra." goto:.Escena4.1
+@choice "¿Me vas a dar dulces?" goto:.Escena4.2
+@choice "Correr en la dirección contraria." goto:.Escena4.3
+@stop 
 
-#Escena4.1
+# Escena4.1
 ; Escena 4.1 - Bosque
 @back Bosque
 @char Protagonista.Normal
 Gato.Feliz: Bien, dame la mano.
+@goto .Escena5
+@stop 
 
-goto:.Escena5
-
-#Escena4.2
+# Escena4.2
 ; Escena 4.2 - Bosque
 @back Bosque
 @char Protagonista.Normal
 Gato.Enojado: ¿Qué clase de persona crees que soy? No atraigo a niños con dulces para luego comérmelos.
 Protagonista.Feliz: Si tú lo dices.
 Gato.Enojado: Toma la mano de la protagonista con fuerza y la arrastra hacia algún lugar desconocido.
+@goto .Escena5
+@stop 
 
-#Escena4.3
+# Escena4.3
 ; Final 1 - Mala decisión
 @back Bosque
 @char Protagonista.Confundida
 @char Gato.Enojado
 ;@char  Protagonista remove
 Lección número 1: No hables con extraños.
+@goto .Escena5
+@stop 
 
-#Escena5
+# Escena5
 ; Escena 5 - Entrada de la escuela
 @back Entrada
-;@char Gato remove
-;@char  Protagonista remove
+@hideChars
 Gato: Bienvenida. Esta es la Academia Mística o MMA. Un lugar para aquellos con dones especiales.
 Protagonista: ¿Dones especiales? No entiendo... Yo solo soy una chica normal.
 Gato: Evitando la mirada. Ya veremos.
 
-@choice Seguir a Gato en silencio. goto:.Escena6.1
-@choice Preguntar directamente qué está pasando. goto:.Escena6.2
+@choice "Seguir a Gato en silencio." goto:.Escena6.1
+@choice "Preguntar directamente qué está pasando." goto:.Escena6.2
+@stop
 
-#Escena6.1
+# Escena6.1
 ; Escena 6.1 - Interior de la escuela
 #scene6_1
 @back Escuela
 ;@char Gato remove
 Protagonista.Feliz: (Todo esto es increíble... pero tan extraño).
 Gato.Feliz: Aquí es donde comenzarás a entender tu verdadero propósito.
+@goto .Escena7
+@stop 
 
-#Escena6.2
+# Escena6.2
 ; Escena 6.2 - Interior de la escuela
 @back Escuela
 ;@char Gato remove
 Protagonista.Confundida: Espera, necesito respuestas. ¿Por qué estoy aquí? ¿Qué significa todo esto?
 Gato.Feliz2: Sus ojos brillan levemente. Pronto lo sabrás. Pero primero, necesitamos presentarte.
+@goto .Escena7
+@stop 
 
-#Escena7
+# Escena7
 ; Escena 7 - Interior de la escuela
+@hideChars
+Continuará...
+
+# Escena8
+; Escena 7 - Sueño
+@back Dia
+Fin del capitulo 1
+
+# Episodio2
+
+# Escena1
+; Escena 1 - Pasillo de la escuela
+@back Pasillo
+@char Protagonista.Normal
+Gato.Feliz: Ahora empieza lo real. Estás a punto de conocer a otros como tú... aunque cada uno con su propio enigma.
+Protagonista: ¿Qué clase de personas son?
+Gato: Algunos esconden secretos... otros, intenciones. Tú decide en quién confiar.
+
+@choice "Seguir a Gato sin decir nada." goto:.Escena2.1
+@choice "Exigir respuestas sobre la escuela." goto:.Escena2.2
+@stop
+
+# Escena2.1
+; Escena 2.1 - Aula vacía
+@back Aula
+@char Vio.Normal
+Vio: ¡Oh, mira lo que trajo la noche! ¿Eres nueva? ¿Te gustan los acertijos o los disfraces?
+Protagonista: ¿Tú quién eres?
+Vio: Vio, diseñador de moda zombi y... coleccionista de secretos.
+
+@choice "Coquetear sutilmente con Vio." goto:.RomanceVio1
+@choice "Cuestionarlo sobre qué tipo de secretos guarda." goto:.MisterioVio1
+@stop
+
+# Escena2.2
+; Escena 2.2 - Biblioteca
+@back Biblioteca
+@char Val.Normal
+Val: ¡Al fin te encuentro! Estaba apostando que llegarías aquí antes del anochecer.
+Protagonista: ¿Me estabas esperando?
+Val: Digamos que tengo buen ojo para lo... especial.
+
+@choice "Preguntarle si sabe por qué fue traída aquí." goto:.MisterioVal1
+@choice "Responder con un cumplido coquetón." goto:.RomanceVal1
+@stop
+
+# Escena3
+; Escena 3 - Jardín oculto
+@back Jardin
+@char Pay.Normal
+Pay: El silencio dice más que mil palabras... pero el misterio dice aún más.
+Protagonista: ¿Pay, verdad? ¿Quién eres realmente?
+Pay: Una presencia que flota entre lo que fue y lo que será. Te estaba esperando.
+
+@choice "Preguntar qué quiso decir con eso." goto:.MisterioPay1
+@choice "Aceptar su invitación a tomar té." goto:.RomancePay1
+@stop
+
+# RomanceVio1
+@back Aula
+Vio: Hmm... eso no me lo esperaba. Peligroso coquetear con un muerto, ¿no crees?
+Protagonista: Solo si no sabes cómo jugar.
+@flag RomanceVio = 1
+@goto .Escena4
+
+# MisterioVio1
+Vio: Algunos secretos están mejor cosidos en la oscuridad... pero puedo enseñarte uno, si me ayudas con un pequeño favor.
+@flag MisterioVio = 1
+@goto .Escena4
+
+# RomanceVal1
+@back Biblioteca
+Val: ¡Ohhh! Me encanta tu energía. Eres como un rayo de sol en una botella de sombra.
+Protagonista: (Este vampiro es más encantador de lo que parece.)
+@flag RomanceVal = 1
+@goto .Escena4
+
+# MisterioVal1
+Val: ¿Por qué estás aquí? Eso depende... ¿estás lista para aceptar que todo lo que creías normal no lo era?
+@flag MisterioVal = 1
+@goto .Escena4
+
+# RomancePay1
+@back Jardin
+Pay: Pocas personas se toman el tiempo de simplemente... estar.
+Protagonista: Me gusta el silencio cuando es compartido.
+@flag RomancePay = 1
+@goto .Escena4
+
+# MisterioPay1
+Pay: Lo que soñaste... fue una advertencia. El peligro no está fuera, sino dentro de estas paredes.
+@flag MisterioPay = 1
+@goto .Escena4
+
+# Escena4
+; Escena 4 - Dormitorio
+@back Dormitorio
+@char Protagonista.Normal
+Protagonista: (Vio, Val, Pay... Cada uno esconde algo. Pero ¿cuál de ellos me está diciendo la verdad? ¿Y por qué siento que ya los conozco?)
+Gato: Mañana será más difícil elegir en quién confiar. Y más aún, en quién dejar entrar a tu corazón.
+
+# Escena5
+; Escena 5 - Final de episodio
+@back Noche
+@hideChars
+Narrador: Entre secretos, miradas y destinos entrelazados, la noche cae sobre la Academia. Y el verdadero juego... apenas comienza.
+
 Continuará...
