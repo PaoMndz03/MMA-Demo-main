@@ -208,6 +208,9 @@ MonoBehaviour:
     - name: Music1
       pathPrefix: Audio
       guid: 40b7fbade7c627b449beb0b8c55ca977
+    - name: Magic
+      pathPrefix: Audio
+      guid: 608e5d91aa4f2f64996f97496e5d7c5a
   - Id: Characters/bbd3d10d-7752-4cc7-8264-2130f147dcc9
     Resources:
     - name: Laugh

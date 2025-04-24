@@ -1,5 +1,6 @@
 # Episodio1
 
+@bgm Magic volume:0.3
 # Escena1
 ; Escena 1 - Sueño
 @back Noche
@@ -24,7 +25,7 @@ Gato: Ven conmigo.
 @choice "Seguirla sin decir ninguna palabra." goto:.Escena4_1
 @choice "¿Me vas a dar dulces?" goto:.Escena4_2
 @choice "Correr en la dirección contraria." goto:.Escena4_3
-@stop 
+@stop
 
 # Escena4_1
 ; Escena 4.1 - Bosque
@@ -32,7 +33,7 @@ Gato: Ven conmigo.
 @char Protagonista.Normal
 Gato.Feliz: Bien, dame la mano.
 @goto .Escena5
-@stop 
+@stop
 
 # Escena4_2
 ; Escena 4.2 - Bosque
@@ -42,17 +43,17 @@ Gato.Enojado: ¿Qué clase de persona crees que soy? No atraigo a niños con dul
 Protagonista.Feliz: Si tú lo dices.
 Gato.Enojado: Toma la mano de la protagonista con fuerza y la arrastra hacia algún lugar desconocido.
 @goto .Escena5
-@stop 
+@stop
 
 # Escena4_3
 ; Final 1 - Mala decisión
 @back Bosque
 @char Protagonista.Confundida
 @char Gato.Enojado
-;@char  Protagonista remove
+; @char  Protagonista remove
 Lección número 1: No hables con extraños.
 @goto .Escena5
-@stop 
+@stop
 
 # Escena5
 ; Escena 5 - Entrada de la escuela
@@ -68,22 +69,22 @@ Gato: Evitando la mirada. Ya veremos.
 
 # Escena6_1
 ; Escena 6.1 - Interior de la escuela
-#scene6_1
+# scene6_1
 @back Escuela
-;@char Gato remove
+; @char Gato remove
 Protagonista.Feliz: (Todo esto es increíble... pero tan extraño).
 Gato.Feliz: Aquí es donde comenzarás a entender tu verdadero propósito.
 @goto .Escena7
-@stop 
+@stop
 
 # Escena6_2
 ; Escena 6.2 - Interior de la escuela
 @back Escuela
-;@char Gato remove
+; @char Gato remove
 Protagonista.Confundida: Espera, necesito respuestas. ¿Por qué estoy aquí? ¿Qué significa todo esto?
 Gato.Feliz2: Sus ojos brillan levemente. Pronto lo sabrás. Pero primero, necesitamos presentarte.
 @goto .Escena7
-@stop 
+@stop
 
 # Escena7
 ; Escena 7 - Interior de la escuela

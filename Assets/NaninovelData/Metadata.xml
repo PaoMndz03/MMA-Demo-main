@@ -372,6 +372,10 @@
         &lt;Type&gt;Audio&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
+        &lt;Path&gt;Magic&lt;/Path&gt;
+        &lt;Type&gt;Audio&lt;/Type&gt;
+      &lt;/Resource&gt;
+      &lt;Resource&gt;
         &lt;Path&gt;Laugh&lt;/Path&gt;
         &lt;Type&gt;Characters/Mika&lt;/Type&gt;
       &lt;/Resource&gt;
