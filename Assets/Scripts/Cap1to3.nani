@@ -1,0 +1,468 @@
+# Episodio1
+
+# Escena1
+; Escena 1 - Sueño
+@back Noche
+Protagonista: Otra vez el mismo sueño, sin importar qué haga, siempre regreso aquí.
+
+# Escena2
+; Escena 2 - Calle empedrada
+@back Gato
+Protagonista: ¿Qué habrá pasado? ... 
+Protagonista: Hola, gatito. ¿Te has perdido? 
+Protagonista: Parece que yo también.
+Protagonista: ¿A dónde vas, pequeño?
+
+# Escena3
+; Escena 3 - Bosque
+@back Bosque
+Gato: Qué extraño. Se supone que los humanos comunes no deberían percibir este lugar, mucho menos llegar hasta aquí.
+@char Gato.Normal
+Protagonista.Confundida: ¿Y tú quién eres? ¿Conoces al gatito que estaba siguiendo?
+Gato: Ven conmigo.
+
+@choice "Seguirla sin decir ninguna palabra." goto:.Escena4_1
+@choice "¿Me vas a dar dulces?" goto:.Escena4_2
+@choice "Correr en la dirección contraria." goto:.Escena4_3
+@stop 
+
+# Escena4_1
+; Escena 4.1 - Bosque
+@back Bosque
+@char Protagonista.Normal
+Gato.Feliz: Bien, dame la mano.
+@goto .Escena5
+@stop 
+
+# Escena4_2
+; Escena 4.2 - Bosque
+@back Bosque
+@char Protagonista.Normal
+Gato.Enojado: ¿Qué clase de persona crees que soy? No atraigo a niños con dulces para luego comérmelos.
+Protagonista.Feliz: Si tú lo dices.
+Gato.Enojado: Toma la mano de la protagonista con fuerza y la arrastra hacia algún lugar desconocido.
+@goto .Escena5
+@stop 
+
+# Escena4_3
+; Final 1 - Mala decisión
+@back Bosque
+@char Protagonista.Confundida
+@char Gato.Enojado
+;@char  Protagonista remove
+Lección número 1: No hables con extraños.
+@goto .Escena5
+@stop 
+
+# Escena5
+; Escena 5 - Entrada de la escuela
+@back Entrada
+@hideChars
+Gato: Bienvenida. Esta es la Academia Mística o MMA. Un lugar para aquellos con dones especiales.
+Protagonista: ¿Dones especiales? No entiendo... Yo solo soy una chica normal.
+Gato: Evitando la mirada. Ya veremos.
+
+@choice "Seguir a Gato en silencio." goto:.Escena6_1
+@choice "Preguntar directamente qué está pasando." goto:.Escena6_2
+@stop
+
+# Escena6_1
+; Escena 6.1 - Interior de la escuela
+#scene6_1
+@back Escuela
+;@char Gato remove
+Protagonista.Feliz: (Todo esto es increíble... pero tan extraño).
+Gato.Feliz: Aquí es donde comenzarás a entender tu verdadero propósito.
+@goto .Escena7
+@stop 
+
+# Escena6_2
+; Escena 6.2 - Interior de la escuela
+@back Escuela
+;@char Gato remove
+Protagonista.Confundida: Espera, necesito respuestas. ¿Por qué estoy aquí? ¿Qué significa todo esto?
+Gato.Feliz2: Sus ojos brillan levemente. Pronto lo sabrás. Pero primero, necesitamos presentarte.
+@goto .Escena7
+@stop 
+
+# Escena7
+; Escena 7 - Interior de la escuela
+@hideChars
+Continuará...
+
+# Escena8
+; Escena 7 - Sueño
+@back Noche
+Fin del capitulo 1...
+Un día normal
+
+
+
+# Episodio2
+
+# Escena8
+; Escena 8 - Pasillo de la escuela
+@back Escuela
+@char Protagonista.Normal
+Gato.Feliz: Ahora empieza lo real. Estás a punto de conocer a otros como tú... aunque cada uno con su propio enigma.
+Protagonista.Confundida: ¿Qué clase de personas son?
+Gato: Algunos esconden secretos... otros, intenciones. Tú decide en quién confiar.
+@hideChars
+
+@choice "Seguir a Gato sin decir nada." goto:.Escena9_1
+@choice "Exigir respuestas sobre la escuela." goto:.Escena9_2
+@stop
+
+# Escena9_1
+; Escena 9.1 - Aula vacía
+@back SalonP
+@char Gato.Normal
+@char Protagonista.Normal
+Vio.Feliz: ¡Oh, mira lo que trajo la noche! ¿Eres nueva? ¿Te gustan los acertijos o los disfraces?
+Protagonista: ¿Tú quién eres?
+Vio: Vio, diseñadora de moda zombi y... coleccionista de secretos.
+
+@choice "Decirle que parece alguien interesante." goto:.Escena10_1
+@choice "Acusarlo de esconder algo peligroso." goto:.Escena10_2
+@stop
+
+# Escena10_1
+Vio.Feliz: ¡Oh, qué halago tan inusual! Casi siento que todavía tengo pulso.
+Gato.Normal: Vio, sabes donde se encuentra la delegada.
+Vio.Normal: Seguro esta en el bosque tomando el té como de costumbre.
+Gato.Normal: Vamos.
+Protagonista.Normal: Nos vemos pronto.
+@hideChars
+@goto .Escena11
+@stop
+
+# Escena10_2
+Vio.Triste: Juzgar un libro por su portada puede hacer que te pierdas la historia completa... o que acabes dentro de ella.
+Gato.Normal: Vio, sabes donde se encuentra la delegada.
+Vio.Normal: Seguro esta en el bosque tomando el té como de costumbre.
+Gato.Normal: Vamos.
+@hideChars
+@goto .Escena11
+@stop
+
+# Escena9_2
+; Escena 9.2 - Biblioteca
+@back Salon
+Gato.Normal: Solo sigueme.
+@char Protagonista.Enojada
+Val.Normal: ¡Al fin te encuentro! Estaba apostando que llegarías aquí antes del anochecer.
+Protagonista.Normal: ¿Me estabas esperando?
+Val.Feliz: Digamos que tengo buen ojo para lo... especial.
+
+@choice "Decirle que se ve amigable." goto:.Escena10_3
+@choice "Advertirle que no confías en los halagos." goto:.Escena10_4
+@stop
+
+# Escena10_3
+Val.Feliz: Qué dulzura. Tal vez esta noche no sea tan sombría después de todo.
+Gato.Normal: Vio, sabes donde se encuentra la delegada.
+Val.Normal: Seguro esta en el bosque tomando el té como de costumbre.
+Gato.Normal: Vamos.
+Protagonista.Normal: Nos vemos pronto.
+@hideChars
+@goto .Escena11
+@stop
+
+# Escena10_4
+Val.Triste: Qué pena... estaba empezando a pensar que podías confiar en mí.
+Gato.Normal: Vio, sabes donde se encuentra la delegada.
+Val.Normal: Seguro esta en el bosque tomando el té como de costumbre.
+Gato.Normal: Vamos.
+@hideChars
+@goto .Escena11
+@stop
+
+# Escena11
+; Escena 11 - Jardín oculto
+@back Bosque
+@char Gato.Normal
+@char Protagonista.Normal
+Pay.Normal: El silencio dice más que mil palabras... pero el misterio dice aún más.
+Protagonista.Confundida: ¿Pay, verdad? ¿Quién eres realmente?
+Pay.Normal: Una presencia que flota entre lo que fue y lo que será. Te estaba esperando.
+
+@choice "Decir que aprecia su calma." goto:.Escena12_1
+@choice "Decirle que no confías en los fantasmas." goto:.Escena12_2
+@stop
+
+# Escena12_1
+Pay.Feliz: El equilibrio es raro de encontrar. Me alegra que lo notes.
+Gato.Normal: Hola delegada.
+Gato.Normal: Esta chica esta interesada en matricularse.
+Pay.Feliz: Bien, comenzemos con su papeleo.
+@hideChars
+@goto .Escena13
+@stop
+
+# Escena12_2
+Pay.Normal: La desconfianza es útil... pero también puede cerrar puertas que no vuelven a abrirse.
+Gato.Normal: Hola delegada.
+Gato.Normal: Esta chica esta interesada en matricularse.
+Pay.Normal: Bien, comenzemos con su papeleo.
+@hideChars
+@goto .Escena13
+@stop
+
+# Escena13
+; Escena 13 - Habitacion
+@back Habitacion
+@char Protagonista.Normal
+Protagonista: Gracias a la delegada el papeleo ha sido ameno y pronto me han asignado una habitación.
+Protagonista: Pay y esa extraña chica gato me han dejado aquí.
+Protagonista: Aun no puedo procesar que hago en este lugar.
+Protagonista: Vio, Val, Pay... Cada uno esconde algo. Pero ¿cuál de ellos me está diciendo la verdad? ¿Y por qué siento que ya los conozco?
+Protagonista: Haaaaa tampoco es que quiera regresar
+@hideChars
+
+# Escena14
+; Escena 14 - Final de episodio
+@back Noche
+Fin del capitulo 2...
+Bienvenida
+
+
+
+# Episodio3
+
+# Escena15
+; Escena 15 - Habitacion
+@back Habitacion
+La mañana asoma sus primeros rayos de sol dentro de la habitación tranquila.
+Protagonista.Normal: Haaa que sueño, se supone que eran vacaciones.
+Protagonista.Normal: Debería buscar a esa niña gato.
+La protagonista se alista para salir.
+
+@choice "Salir en busca de la niña gato." goto:.Escena16_1
+@choice "Quedarse a descansar un poco más." goto:.Escena16_2
+@stop
+
+# Escena16_1
+; Escena 16.1 - Pasillo de la escuela
+@back Escuela
+@char Protagonista.Normal
+Protagonista.Normal: Tengo que encontrarla. Algo en ella no está bien, pero no puedo dejar de pensar en esa extraña sensación de ya haberla conocido.
+La protagonista avanza por el pasillo de la escuela, buscando a la niña gato.
+
+@choice "Preguntar a los estudiantes si han visto a la niña gato." goto:.Escena17_1
+@choice "Seguir explorando el pasillo en silencio." goto:.Escena17_2
+@stop
+
+# Escena16_2
+; Escena 16 - Habitacion
+@back Habitacion
+Protagonista.Normal: ¿Que debería hacer?
+@choice "Salir en busca de la niña gato." goto:.Escena16_1
+@choice "Quedarse a descansar un poco más." goto:.Escena16_2
+@stop
+
+# Escena17_1
+; Escena 17.1 - Aula
+@back Salon
+@char Vio.Normal
+Vio.Feliz: ¿La niña gato? Oh, sí, la he visto cerca del jardín, como siempre. Está siempre tan misteriosa, ¿verdad?
+Protagonista.Normal: Gracias, ¡ya voy para allá!
+
+@choice "Ir directamente al jardín." goto:.Escena18_1
+@choice "Preguntar más sobre ella." goto:.Escena18_2
+@stop
+
+# Escena17_2
+; Escena 17.2 - Pasillo oscuro
+@back Escuela
+@char Protagonista.Normal
+Protagonista.Normal: Algo no encaja... ¿Por qué todos aquí parecen tan... distantes?
+La protagonista sigue caminando en el pasillo, con la sensación de que está siendo observada.
+
+@choice "Entrar en una de las aulas vacías." goto:.Escena18_2
+@choice "Seguir adelante y salir al jardín." goto:.Escena18_1
+@stop
+
+# Escena18_1
+; Escena 18.1 - Jardín
+@back Bosque
+@hideChars
+@char Gato.Normal
+Protagonista.Normal: Aquí está... La niña gato, como la llamé. Pero algo en sus ojos... parece que sabe algo que yo no.
+Gato.Normal: No me sigas, aún no es tu momento.
+
+@choice "Preguntar por qué está tan distante." goto:.Escena19_1
+@choice "Insistir en que te explique qué está pasando." goto:.Escena19_2
+@stop
+
+# Escena18_2
+; Escena 18.2 - Aula
+@back Salon
+@char Val.Normal
+Val.Feliz: ¿La niña gato? Oh... Es alguien con muchos secretos sin duda.
+Val.Normal: Seguro la podras encontrar en el jardín.
+Protagonista.Normal: Gracias, ¡ya voy para allá! 
+@goto .Escena18_1
+@Stop
+
+# Escena19_1
+; Escena 19.1 - Jardín
+@back Bosque
+@char Gato.Normal
+@char Protagonista.Normal
+Protagonista.Normal: ¿Por qué te comportas así? No soy una niña como las demás. Puedo ayudarte si me dejas.
+Gato.Normal: No todo se puede resolver con palabras. A veces, las respuestas están en el silencio.
+
+@choice "Aceptar su silencio y quedarse a su lado." goto:.Escena20_1
+@choice "Salir a buscar más respuestas por tu cuenta." goto:.Escena20_2
+@stop
+
+# Escena19_2
+; Escena 19.2 - Jardín
+@back Bosque
+@char Gato.Normal
+@char Protagonista.Normal
+Protagonista.Normal: No entiendo... ¿por qué no me hablas directamente?
+Gato.Normal: Porque aún no es el momento. Todo a su tiempo, todo a su debido tiempo...
+
+@choice "Insistir en que te explique todo." goto:.Escena20_2
+@choice "Alejarte frustrada." goto:.Escena20_3
+@stop
+
+# Escena20_1
+; Escena 20.1 - Jardín tranquilo
+@back Bosque
+@char Gato.Normal
+Protagonista.Normal: A veces el silencio puede ser más fuerte que mil palabras, ¿verdad?
+Gato.Normal: Exactamente. No todo tiene que ser explicado, solo... sentido.
+
+@choice "Seguir la conversación." goto:.Escena21_1
+@choice "Salir en busca de algo más." goto:.Escena21_2
+@stop
+
+# Escena20_2
+; Escena 20.2 - Pasillo
+@back Escuela
+@hidechars
+@hidechars
+@char Protagonista.Normal
+Protagonista.Normal: No entiendo nada de lo que está pasando, pero una cosa es clara: aquí hay algo que debo descubrir.
+La protagonista decide continuar su camino y explorar por su cuenta.
+
+@choice "Buscar al director de la escuela." goto:.Escena21_3
+@choice "Seguir buscando pistas en el jardín." goto:.Escena21_4
+@stop
+
+# Escena20_3
+; Escena 20.3 - Habitacion
+@back Habitacion
+@hidechars
+@char Protagonista.Normal
+Protagonista.Normal: No sé si debo estar aquí... pero algo me dice que debo seguir buscando respuestas.
+La protagonista se siente desconectada del entorno, como si algo estuviera mal.
+
+@choice "Descansar un poco y organizar sus pensamientos." goto:.Escena21_5
+@choice "Salir a investigar más." goto:.Escena21_6
+@stop
+
+# Escena21_1
+; Escena 21.1 - Interior del jardín
+@back Bosque
+@char Gato.Normal
+@char Protagonista.Normal
+Protagonista.Normal: ¿Me estás evitando, o realmente no sabes qué decirme?
+Gato.Normal: A veces, las palabras no son suficientes. ¿Alguna vez lo has sentido?
+
+@choice "Aceptar su respuesta en silencio." goto:.Escena22_1
+@choice "Pedirle que te lleve a donde puedas encontrar respuestas." goto:.Escena22_2
+@stop
+
+# Escena21_2
+; Escena 21.2 - Caminando por el jardín
+@back Bosque
+@char Protagonista.Normal
+@hideChars
+Protagonista.Normal: Este lugar es tan peculiar... es como si todo estuviera envuelto en un misterio.
+La protagonista sigue explorando el jardín, buscando algo que le dé sentido a todo esto.
+
+@choice "Hablar con otros estudiantes en el jardín." goto:.Escena22_3
+@choice "Buscar un lugar más tranquilo para pensar." goto:.Escena23
+@stop
+
+# Escena21_3
+; Escena 21.3 - Oficina del Director
+@back Entrada
+@char Protagonista.Normal
+Protagonista.Normal: Tal vez el director pueda arrojar algo de luz sobre lo que está pasando aquí.
+La protagonista se encuentra frente a la puerta de la oficina del director.
+
+@choice "Llamar a la puerta y entrar." goto:.Escena22_5
+@choice "Esperar afuera y observar." goto:.Escena22_6
+@stop
+
+# Escena21_4
+; Escena 21.4 - Regresando al jardín
+@back Bosque
+@char Protagonista.Normal
+Protagonista.Normal: A veces, la única forma de encontrar respuestas es seguir explorando. El jardín tiene algo que me atrae.
+
+@choice "Seguir investigando por el jardín." goto:.Escena22_4
+@choice "Regresar a la escuela y hablar con alguien más." goto:.Escena22_5
+@stop
+
+# Escena21_5
+; Escena 21.5 - Descansando en la habitación
+@back Habitacion
+@char Protagonista.Normal
+Protagonista.Normal: Quizá me esté tomando todo esto demasiado en serio. Tal vez debería relajarme y pensar con calma.
+
+@choice "Salir y hablar con Gato nuevamente." goto:.Escena22_1
+@choice "Quedarme en la habitación a descansar." goto:.Escena22_6
+@stop
+
+# Escena21_6
+; Escena 21.6 - Reflexión en el pasillo
+@back Escuela
+@char Protagonista.Normal
+Protagonista.Normal: Necesito tiempo para procesar todo esto. Algo aquí no está bien, pero no sé qué es.
+
+@choice "Regresar a la habitación." goto:.Escena22_5
+@choice "Buscar a alguien más que pueda ayudar." goto:.Escena22_3
+@stop
+
+# Escena22_1
+; Escena 22.1 - Continuación de la exploración
+@back Bosque
+@char Gato.Normal
+@char Protagonista.Normal
+Protagonista.Normal: ¿Por qué todo esto parece tan extraño?
+Gato.Normal: Porque este lugar es más que un simple instituto. Aquí, lo imposible se hace posible.
+
+@goto .Escena23
+@stop
+
+# Escena22_2
+; Escena 22.2 - Revelación
+@back Bosque
+@char Gato.Normal
+@char Protagonista.Normal
+Protagonista.Normal: Necesito respuestas. ¿Qué está pasando aquí?
+Gato.Normal: Todo a su tiempo. Solo debes estar preparada para lo que vas a descubrir.
+
+@goto .Escena23
+@stop
+
+# Escena22_3
+; Escena 22.3 - Estudiantes del jardín
+@back Bosque
+Protagonista.Normal: ¿Sabes algo sobre la niña gato?
+Pay.Normal: Ah, ella... todos aquí tienen algo que
+
+@goto .Escena23
+@stop
+
+# Escena23
+; Escena 23 - Final de episodio
+@back Noche
+@hideChars
+Fin del capitulo 3...
+Dudas y mas dudas

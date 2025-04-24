@@ -194,7 +194,7 @@ MonoBehaviour:
     - name: SalonP
       pathPrefix: Backgrounds/MainBackground
       guid: a82cb1c8b4def154b96b71394ddcfbf3
-    - name: "Habitaci\xF3n"
+    - name: Habitacion
       pathPrefix: Backgrounds/MainBackground
       guid: 9d2e9bb99bdfdad47a55dd2ee060b740
     - name: Bosque

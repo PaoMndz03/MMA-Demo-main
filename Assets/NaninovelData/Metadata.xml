@@ -86,7 +86,7 @@
           &lt;string&gt;Escuela&lt;/string&gt;
           &lt;string&gt;Salon&lt;/string&gt;
           &lt;string&gt;SalonP&lt;/string&gt;
-          &lt;string&gt;Habitación&lt;/string&gt;
+          &lt;string&gt;Habitacion&lt;/string&gt;
           &lt;string&gt;Bosque&lt;/string&gt;
           &lt;string&gt;Entrada&lt;/string&gt;
         &lt;/Appearances&gt;
@@ -356,7 +356,7 @@
         &lt;Type&gt;Backgrounds/MainBackground&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
-        &lt;Path&gt;Habitación&lt;/Path&gt;
+        &lt;Path&gt;Habitacion&lt;/Path&gt;
         &lt;Type&gt;Backgrounds/MainBackground&lt;/Type&gt;
       &lt;/Resource&gt;
       &lt;Resource&gt;
