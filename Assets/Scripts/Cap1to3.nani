@@ -417,7 +417,7 @@ Protagonista.Normal: A veces, la única forma de encontrar respuestas es seguir 
 Protagonista.Normal: Quizá me esté tomando todo esto demasiado en serio. Tal vez debería relajarme y pensar con calma.
 
 @choice "Salir y hablar con Gato nuevamente." goto:.Escena22_1
-@choice "Quedarme en la habitación a descansar." goto:.Escena22_6
+@choice "Quedarme en la habitación a descansar." goto:.Escena21_5
 @stop
 
 # Escena21_6
@@ -425,7 +425,6 @@ Protagonista.Normal: Quizá me esté tomando todo esto demasiado en serio. Tal v
 @back Escuela
 @char Protagonista.Normal
 Protagonista.Normal: Necesito tiempo para procesar todo esto. Algo aquí no está bien, pero no sé qué es.
-
 @choice "Regresar a la habitación." goto:.Escena22_5
 @choice "Buscar a alguien más que pueda ayudar." goto:.Escena22_3
 @stop
